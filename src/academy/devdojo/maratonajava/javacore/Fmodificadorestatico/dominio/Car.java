@@ -4,18 +4,26 @@ public class Car {
 
     private String brand;
     private double maxSpeed;
-    public static double limitedSpeed = 250;
+    private static double limitedSpeed = 250;
 
     public Car(String brand, double maxSpeed) {
         this.brand = brand;
         this.maxSpeed = maxSpeed;
     }
 
-    public void imprime() {
+        public void imprime() {
         System.out.println("--------------");
         System.out.println("Nome: " + this.brand);
         System.out.println("Max Speed: " + this.maxSpeed);
         System.out.println("Limited Speed: " + Car.limitedSpeed);
+    }
+
+    public static void setLimitedSpeed(double limitedSpeed) {
+        Car.limitedSpeed = limitedSpeed;
+    }
+
+    public static double getLimitedSpeed(){
+        return Car.limitedSpeed;
     }
 
     public String getbrand() {

@@ -10,7 +10,7 @@ public class CarroTeste01 {
         Car c2 = new Car("Mercedes", 280);
         Car c3 = new Car("Volvo", 300);
 
-        Car.limitedSpeed = 180;
+        Car.setLimitedSpeed(180);
 
         c1.imprime();
         c2.imprime();
