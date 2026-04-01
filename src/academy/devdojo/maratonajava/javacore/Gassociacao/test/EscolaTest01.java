@@ -8,7 +8,8 @@ public class EscolaTest01 {
 
         Professor professor1 = new Professor("Jiraya Sensei");
         Professor professor2 = new Professor("Kakashi Sensei");
-        Professor[] professores = {professor1,professor2};
+        Professor professor3 = new Professor("TCH Sensei");
+        Professor[] professores = {professor1,professor2,professor3};
         Escola escola = new Escola("Konoha", professores);
 
         escola.imprime();
