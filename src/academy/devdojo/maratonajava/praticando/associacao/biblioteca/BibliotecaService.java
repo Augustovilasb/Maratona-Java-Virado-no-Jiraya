@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.praticando.associacao;
+package academy.devdojo.maratonajava.praticando.associacao.biblioteca;
 
 public class BibliotecaService {
 
