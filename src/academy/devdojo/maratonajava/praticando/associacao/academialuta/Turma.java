@@ -1,5 +1,7 @@
 package academy.devdojo.maratonajava.praticando.associacao.academialuta;
 
+import java.util.Arrays;
+
 public class Turma {
 
     private String nome;
@@ -33,6 +35,18 @@ public class Turma {
         }
         System.out.println();
     }
+
+/*
+    @Override
+    public String toString() {
+        return "Turma{" +
+                "alunos=" + Arrays.toString(alunos) +
+                ", nome='" + nome + '\'' +
+                ", horario=" + horario +
+                ", professor=" + professor +
+                ", sala=" + sala +
+                '}';
+    }*/
 
     public String getNome() {
         return nome;

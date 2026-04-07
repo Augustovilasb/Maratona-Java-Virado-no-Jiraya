@@ -1,0 +1,61 @@
+[
+  {"nome":"Aluno 1","matricula":1001,"curso":{"id":1,"nome":"Engenharia de Software"}},
+  {"nome":"Aluno 2","matricula":1002,"curso":{"id":2,"nome":"Ciência da Computação"}},
+  {"nome":"Aluno 3","matricula":1003,"curso":{"id":3,"nome":"Sistemas de Informação"}},
+  {"nome":"Aluno 4","matricula":1004,"curso":{"id":4,"nome":"Análise e Desenvolvimento de Sistemas"}},
+  {"nome":"Aluno 5","matricula":1005,"curso":{"id":5,"nome":"Engenharia Elétrica"}},
+
+  {"nome":"Aluno 6","matricula":1006,"curso":{"id":1,"nome":"Engenharia de Software"}},
+  {"nome":"Aluno 7","matricula":1007,"curso":{"id":2,"nome":"Ciência da Computação"}},
+  {"nome":"Aluno 8","matricula":1008,"curso":{"id":3,"nome":"Sistemas de Informação"}},
+  {"nome":"Aluno 9","matricula":1009,"curso":{"id":4,"nome":"Análise e Desenvolvimento de Sistemas"}},
+  {"nome":"Aluno 10","matricula":1010,"curso":{"id":5,"nome":"Engenharia Elétrica"}},
+
+  {"nome":"Aluno 11","matricula":1011,"curso":{"id":1,"nome":"Engenharia de Software"}},
+  {"nome":"Aluno 12","matricula":1012,"curso":{"id":2,"nome":"Ciência da Computação"}},
+  {"nome":"Aluno 13","matricula":1013,"curso":{"id":3,"nome":"Sistemas de Informação"}},
+  {"nome":"Aluno 14","matricula":1014,"curso":{"id":4,"nome":"Análise e Desenvolvimento de Sistemas"}},
+  {"nome":"Aluno 15","matricula":1015,"curso":{"id":5,"nome":"Engenharia Elétrica"}},
+
+  {"nome":"Aluno 16","matricula":1016,"curso":{"id":1,"nome":"Engenharia de Software"}},
+  {"nome":"Aluno 17","matricula":1017,"curso":{"id":2,"nome":"Ciência da Computação"}},
+  {"nome":"Aluno 18","matricula":1018,"curso":{"id":3,"nome":"Sistemas de Informação"}},
+  {"nome":"Aluno 19","matricula":1019,"curso":{"id":4,"nome":"Análise e Desenvolvimento de Sistemas"}},
+  {"nome":"Aluno 20","matricula":1020,"curso":{"id":5,"nome":"Engenharia Elétrica"}},
+
+  {"nome":"Aluno 21","matricula":1021,"curso":{"id":1,"nome":"Engenharia de Software"}},
+  {"nome":"Aluno 22","matricula":1022,"curso":{"id":2,"nome":"Ciência da Computação"}},
+  {"nome":"Aluno 23","matricula":1023,"curso":{"id":3,"nome":"Sistemas de Informação"}},
+  {"nome":"Aluno 24","matricula":1024,"curso":{"id":4,"nome":"Análise e Desenvolvimento de Sistemas"}},
+  {"nome":"Aluno 25","matricula":1025,"curso":{"id":5,"nome":"Engenharia Elétrica"}},
+
+  {"nome":"Aluno 26","matricula":1026,"curso":{"id":1,"nome":"Engenharia de Software"}},
+  {"nome":"Aluno 27","matricula":1027,"curso":{"id":2,"nome":"Ciência da Computação"}},
+  {"nome":"Aluno 28","matricula":1028,"curso":{"id":3,"nome":"Sistemas de Informação"}},
+  {"nome":"Aluno 29","matricula":1029,"curso":{"id":4,"nome":"Análise e Desenvolvimento de Sistemas"}},
+  {"nome":"Aluno 30","matricula":1030,"curso":{"id":5,"nome":"Engenharia Elétrica"}},
+
+  {"nome":"Aluno 31","matricula":1031,"curso":{"id":1,"nome":"Engenharia de Software"}},
+  {"nome":"Aluno 32","matricula":1032,"curso":{"id":2,"nome":"Ciência da Computação"}},
+  {"nome":"Aluno 33","matricula":1033,"curso":{"id":3,"nome":"Sistemas de Informação"}},
+  {"nome":"Aluno 34","matricula":1034,"curso":{"id":4,"nome":"Análise e Desenvolvimento de Sistemas"}},
+  {"nome":"Aluno 35","matricula":1035,"curso":{"id":5,"nome":"Engenharia Elétrica"}},
+
+  {"nome":"Aluno 36","matricula":1036,"curso":{"id":1,"nome":"Engenharia de Software"}},
+  {"nome":"Aluno 37","matricula":1037,"curso":{"id":2,"nome":"Ciência da Computação"}},
+  {"nome":"Aluno 38","matricula":1038,"curso":{"id":3,"nome":"Sistemas de Informação"}},
+  {"nome":"Aluno 39","matricula":1039,"curso":{"id":4,"nome":"Análise e Desenvolvimento de Sistemas"}},
+  {"nome":"Aluno 40","matricula":1040,"curso":{"id":5,"nome":"Engenharia Elétrica"}},
+
+  {"nome":"Aluno 41","matricula":1041,"curso":{"id":1,"nome":"Engenharia de Software"}},
+  {"nome":"Aluno 42","matricula":1042,"curso":{"id":2,"nome":"Ciência da Computação"}},
+  {"nome":"Aluno 43","matricula":1043,"curso":{"id":3,"nome":"Sistemas de Informação"}},
+  {"nome":"Aluno 44","matricula":1044,"curso":{"id":4,"nome":"Análise e Desenvolvimento de Sistemas"}},
+  {"nome":"Aluno 45","matricula":1045,"curso":{"id":5,"nome":"Engenharia Elétrica"}},
+
+  {"nome":"Aluno 46","matricula":1046,"curso":{"id":1,"nome":"Engenharia de Software"}},
+  {"nome":"Aluno 47","matricula":1047,"curso":{"id":2,"nome":"Ciência da Computação"}},
+  {"nome":"Aluno 48","matricula":1048,"curso":{"id":3,"nome":"Sistemas de Informação"}},
+  {"nome":"Aluno 49","matricula":1049,"curso":{"id":4,"nome":"Análise e Desenvolvimento de Sistemas"}},
+  {"nome":"Aluno 50","matricula":1050,"curso":{"id":5,"nome":"Engenharia Elétrica"}}
+]
