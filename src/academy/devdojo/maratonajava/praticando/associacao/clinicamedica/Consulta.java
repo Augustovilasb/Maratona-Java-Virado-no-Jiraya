@@ -29,17 +29,20 @@ public class Consulta {
         System.out.println("CLINIC: " + sala.getClinica().getNome());
         System.out.println("ENDERECO: " + sala.getClinica().getEndereco());
         System.out.println("###########################################");
+        if (medicos == null) return;
         System.out.println("DOCTOR: " + medicos.getNome());
         System.out.println("SPECIALIST: " + medicos.getEspecialidade());
         System.out.println("###########################################");
+        if (paciente == null) return;
         System.out.println("PACIENT: " + paciente.getNome() + ", CPF: " + paciente.getCpf());
+        if (paciente.getPlanoDeSaude() == null) return;
         System.out.println("ENSURANCE: " + paciente.getPlanoDeSaude().getNome());
         System.out.println("COBERTURA: " + paciente.getPlanoDeSaude().getCobertura());
         System.out.println("###########################################");
         System.out.println("WHEN: " + this.data + ", TIME: " + this.horario);
         System.out.println("ROOM: " + sala.getNumero() + ", FLOR: " + sala.getAndar());
         System.out.println("###########################################");
-        System.out.println("");
+        System.out.println(" ");
     }
 
     public String getData() {
