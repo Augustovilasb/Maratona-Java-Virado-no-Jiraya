@@ -7,6 +7,10 @@ public class Carro {
     public static final double MAX_SPEED = 250;
     public final double MIN_SPEED = 150;
 
+    public final void imprime() {
+        System.out.println(this.name);
+    }
+
     public String getName() {
         return name;
     }
