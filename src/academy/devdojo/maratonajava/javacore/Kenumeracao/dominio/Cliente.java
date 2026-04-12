@@ -1,11 +1,8 @@
 package academy.devdojo.maratonajava.javacore.Kenumeracao.dominio;
 
-public class Cliente {
+import academy.devdojo.maratonajava.javacore.Kenumeracao.dominio.TipoPagemento;
 
-    // private, public or protected
-    public enum TipoPagemento {
-        DEBITO, CREDITO
-    }
+public class Cliente {
 
     private String nome;
     private TipoCliente tipoCliente;
