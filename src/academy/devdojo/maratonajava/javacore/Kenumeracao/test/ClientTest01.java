@@ -20,5 +20,9 @@ public class ClientTest01 {
         System.out.println(TipoPagemento.DEBITO.CalculoDesconto(100));
         System.out.println(TipoPagemento.CREDITO.CalculoDesconto(100));
 
+        TipoCliente tipoCliente = TipoCliente.valueOf("PESSOA_FISICA");
+        TipoCliente tipoCliente2 = TipoCliente.tipoClientePorNomeRelatorio("Pessoa Fisica");
+        System.out.println(tipoCliente.getNomeRelatorio());
+        System.out.println(tipoCliente2);
     }
 }

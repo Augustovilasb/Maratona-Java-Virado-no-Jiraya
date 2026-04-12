@@ -8,7 +8,7 @@ package academy.devdojo.maratonajava.javacore.Kenumeracao.dominio;
                 return valor * 0.1;
             }
         },
-        
+
         CREDITO {
             @Override
             public double CalculoDesconto(double valor) {
