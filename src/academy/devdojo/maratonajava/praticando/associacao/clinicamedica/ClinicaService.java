@@ -20,7 +20,7 @@ public class ClinicaService {
         Paciente pacienteNefrologista = new Paciente("Gabriela", 687.116, planoParcial);
 
         Medico medico1 = new Medico("José", "Endocrinologista");
-        Medico medico2 = new Medico("Lucas", "Cardiologista");  
+        Medico medico2 = new Medico("Lucas", "Cardiologista");
         Medico medico3 = new Medico("Dan", "Oftamologista");
         Medico medico4 = new Medico("Davi", "Nefrologista");
 

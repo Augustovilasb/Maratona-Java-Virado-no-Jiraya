@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.praticando.associacao.universidadesystem;
 
-import java.util.Arrays;
+import academy.devdojo.maratonajava.praticando.associacao.universidadesystem.Aluno;
 
 public class Curso {
 
@@ -9,9 +9,7 @@ public class Curso {
     private Aluno[] alunos;
     private Professor professor;
     private Sala sala;
-
-    public Curso() {
-    }
+    private Universidade universidade;
 
     public Curso(String nome, int duracao) {
         this.nome = nome;
@@ -26,15 +24,25 @@ public class Curso {
         this.sala = sala;
     }
 
-    @Override
-    public String toString() {
-        return "Curso{" +
-                "alunos=" + Arrays.toString(alunos) +
-                ", nome='" + nome + '\'' +
-                ", duracao=" + duracao +
-                ", professor=" + professor +
-                ", sala=" + sala +
-                '}';
+    public void imprime() {
+
+        System.out.println(" ");
+        System.out.println("############################################");
+        System.out.println(" WELCOME TO " + universidade.getNome());
+        System.out.println(" LOCATION AT: " + universidade.getCidade());
+        System.out.println("############################################");
+        System.out.println("CURRENTLY WE HAVE THE FOLLOWING CURSES: ");
+        System.out.println(this.nome + ", com professor: " + professor.getNome() + "\n" +
+                "Especialista em: " + professor.getTitulacao() + " e duração de: " + this.duracao + " ano.");
+            System.out.println("Curso " + this.nome + ", será realizado na sala: " + sala.getNumero() + ", no andar: " + sala.getAndar());
+        System.out.println("############################################");
+        System.out.println("ALUNOS CADASTRADOS E RESPECTIVOS CURSOS: ");
+        if (alunos == null) return;
+        for (Aluno aluno : alunos) {
+            System.out.println("Nome: " + aluno.getNome() + ", Curso: " + aluno.getCurso().getNome() + ", N Matrícula: " + aluno.getMatricula());
+        }
+        System.out.println("############################################");
+        System.out.println(" ");
     }
 
     public String getNome() {
@@ -76,4 +84,14 @@ public class Curso {
     public void setSala(Sala sala) {
         this.sala = sala;
     }
+
+    public Universidade getUniversidade() {
+        return universidade;
+    }
+
+    public void setUniversidade(Universidade universidade) {
+        this.universidade = universidade;
+    }
+
+
 }

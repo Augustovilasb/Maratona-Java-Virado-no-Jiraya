@@ -6,9 +6,6 @@ public class Aluno {
     private int matricula;
     private Curso curso;
 
-    public Aluno() {
-    }
-
     public Aluno(String nome, int matricula) {
         this.nome = nome;
         this.matricula = matricula;
@@ -18,15 +15,6 @@ public class Aluno {
         this.nome = nome;
         this.matricula = matricula;
         this.curso = curso;
-    }
-
-    @Override
-    public String toString() {
-        return "Aluno{" +
-//                "curso=" + curso +
-                ", nome='" + nome + '\'' +
-                ", matricula=" + matricula +
-                '}';
     }
 
     public String getNome() {
