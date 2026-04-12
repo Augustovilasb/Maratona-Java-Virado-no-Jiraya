@@ -10,9 +10,7 @@ public class Anime extends Object{
 
         @Override
     public String toString() {
-        return "Anime{" +
-                "nome='" + nome + '\'' +
-                '}';
+        return "Anime: " + this.nome;
     }
 
     public String getNome() {
