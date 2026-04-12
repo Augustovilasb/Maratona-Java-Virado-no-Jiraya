@@ -47,6 +47,10 @@ public class HerancaTest01 {
         System.out.println("--------------------------");
         funcionario.imprime();
         System.out.println("--------------------------");
+        funcionario.relatorioPagemento();
+        System.out.println("--------------------------");
+        endereco.imprime();
+        System.out.println("--------------------------");
         System.out.println(" ");
     }
 }
