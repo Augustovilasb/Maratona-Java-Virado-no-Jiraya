@@ -2,12 +2,19 @@ package academy.devdojo.maratonajava.javacore.Kenumeracao.dominio;
 
 public class Cliente {
 
+    // private, public or protected
+    public enum TipoPagemento {
+        DEBITO, CREDITO
+    }
+
     private String nome;
     private TipoCliente tipoCliente;
+    private TipoPagemento tipoPagemento;
 
-    public Cliente(String nome, TipoCliente tipoCliente) {
+    public Cliente(String nome, TipoCliente tipoCliente, TipoPagemento tipoPagemento) {
         this.nome = nome;
         this.tipoCliente = tipoCliente;
+        this.tipoPagemento = tipoPagemento;
     }
 
     @Override
@@ -15,22 +22,7 @@ public class Cliente {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
                 ", tipoCliente=" + tipoCliente +
+                ", tipoPagemento=" + tipoPagemento +
                 '}';
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public TipoCliente getTipoCliente() {
-        return tipoCliente;
-    }
-
-    public void setTipoCliente(TipoCliente tipoCliente) {
-        this.tipoCliente = tipoCliente;
     }
 }

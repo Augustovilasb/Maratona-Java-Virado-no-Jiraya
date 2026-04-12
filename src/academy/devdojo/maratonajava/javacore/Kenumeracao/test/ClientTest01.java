@@ -6,10 +6,10 @@ import academy.devdojo.maratonajava.javacore.Kenumeracao.dominio.TipoCliente;
 public class ClientTest01 {
     public static void main(String[] args) {
 
-        Cliente cliente1 = new Cliente("Tsubasa", TipoCliente.PESSOA_FISICA);
-        Cliente cliente2 = new Cliente("kAMIMI", TipoCliente.PESSOA_JURIDICA);
-        Cliente cliente3 = new Cliente("Knouva", TipoCliente.PESSOA_FISICA);
-        Cliente cliente4 = new Cliente("Jivmarrad", TipoCliente.PESSOA_FISICA);
+        Cliente cliente1 = new Cliente("Tsubasa", TipoCliente.PESSOA_FISICA, Cliente.TipoPagemento.DEBITO);
+        Cliente cliente2 = new Cliente("kAMIMI", TipoCliente.PESSOA_JURIDICA, Cliente.TipoPagemento.CREDITO);
+        Cliente cliente3 = new Cliente("Knouva", TipoCliente.PESSOA_FISICA, Cliente.TipoPagemento.DEBITO);
+        Cliente cliente4 = new Cliente("Jivmarrad", TipoCliente.PESSOA_FISICA, Cliente.TipoPagemento.DEBITO);
 
         System.out.println(cliente1);
         System.out.println(cliente2);
