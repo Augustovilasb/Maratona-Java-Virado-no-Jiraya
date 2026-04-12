@@ -11,16 +11,16 @@ public class HerancaTest01 {
         endereco.setRua("58 Rathmines Road Upper");
         endereco.setCep("D06-DF20");
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Antonio Correa");
+        Pessoa pessoa = new Pessoa("Antonio Correa");
+//        pessoa.setNome("Antonio Correa");
         pessoa.setCpf("117.535.896-73");
 
         Endereco endereco2 = new Endereco();
         endereco2.setRua("Meme Rathmines Road Upper");
         endereco2.setCep("D06-DF20");
 
-        Pessoa pessoa2 = new Pessoa();
-        pessoa2.setNome("Geraldo Correa");
+        Pessoa pessoa2 = new Pessoa("Geraldo Correa");
+//        pessoa2.setNome("Geraldo Correa");
         pessoa2.setCpf("119.535.896-73");
 
         pessoa.setEndereco(endereco);
@@ -33,8 +33,8 @@ public class HerancaTest01 {
         System.out.println("--------------------------");
         pessoa2.imprime();
 
-        Funcionario funcionario =new Funcionario();
-        funcionario.setNome("Sirley Vilas Boas");
+        Funcionario funcionario =new Funcionario("Sirley Vilas Boas");
+//        funcionario.setNome("Sirley Vilas Boas");
         funcionario.setCpf("365.896.752-215");
 
         Endereco enderecoFuncionario = new Endereco();
