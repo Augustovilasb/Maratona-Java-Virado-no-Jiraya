@@ -22,6 +22,7 @@ public class Cliente {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
                 ", tipoCliente=" + tipoCliente +
+                ", tipoClienteInt=" + tipoCliente.getValor() +
                 ", tipoPagemento=" + tipoPagemento +
                 '}';
     }
