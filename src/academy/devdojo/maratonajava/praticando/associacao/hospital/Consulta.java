@@ -5,8 +5,8 @@ public class Consulta {
     private String date;
     private String diagnostico;
     private double price;
-    private Medico[] medicos;
-    private Paciente[] pacientes;
+    private Medico medico;
+    private Paciente paciente;
 
     public Consulta(String date) {
         this.date = date;
@@ -17,11 +17,22 @@ public class Consulta {
         this.diagnostico = diagnostico;
     }
 
-    public Consulta(String date, String diagnostico, double price, Medico[] medicos, Paciente[] pacientes) {
+    public Consulta(String date, String diagnostico, double price, Medico medico, Paciente paciente) {
         this(date, diagnostico);
         this.price = price;
-        this.medicos = medicos;
-        this.pacientes = pacientes;
+        this.medico = medico;
+        this.paciente = paciente;
+    }
+
+    @Override
+    public String toString() {
+        return "Consulta{" +
+                "date='" + date + '\'' +
+                ", diagnostico='" + diagnostico + '\'' +
+                ", price=" + price +
+                ", medico=" + medico +
+                ", paciente=" + paciente +
+                '}';
     }
 
     public String getDate() {
@@ -48,19 +59,19 @@ public class Consulta {
         this.price = price;
     }
 
-    public Medico[] getMedicos() {
-        return medicos;
+    public Medico getMedico() {
+        return medico;
     }
 
-    public void setMedicos(Medico[] medicos) {
-        this.medicos = medicos;
+    public void setMedico(Medico medico) {
+        this.medico = medico;
     }
 
-    public Paciente[] getPacientes() {
-        return pacientes;
+    public Paciente getPaciente() {
+        return paciente;
     }
 
-    public void setPaciente(Paciente[] pacientes) {
-        this.pacientes = pacientes;
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
     }
 }

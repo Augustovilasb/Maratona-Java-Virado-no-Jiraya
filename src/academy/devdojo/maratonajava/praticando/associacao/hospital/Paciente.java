@@ -1,12 +1,14 @@
 package academy.devdojo.maratonajava.praticando.associacao.hospital;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Paciente {
 
     private String nome;
     private String cpf;
     private PlanoDeSaude planoDeSaude;
-    private Consulta[] consultas;
-    private Hospital hospital;
+    private List<Consulta> consultas = new ArrayList<>();
 
     public Paciente(String nome) {
         this.nome = nome;
@@ -17,7 +19,7 @@ public class Paciente {
         this.cpf = cpf;
     }
 
-    public Paciente(String nome, String cpf, Consulta[] consultas, PlanoDeSaude planoDeSaude) {
+    public Paciente(String nome, String cpf, List<Consulta> consultas, PlanoDeSaude planoDeSaude) {
         this.nome = nome;
         this.cpf = cpf;
         this.consultas = consultas;
@@ -40,11 +42,11 @@ public class Paciente {
         this.cpf = cpf;
     }
 
-    public Consulta[] getConsultas() {
+    public List<Consulta> getConsultas() {
         return consultas;
     }
 
-    public void setConsultas(Consulta[] consultas) {
+    public void setConsultas(List<Consulta> consultas) {
         this.consultas = consultas;
     }
 

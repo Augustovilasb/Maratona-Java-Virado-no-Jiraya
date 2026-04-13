@@ -4,14 +4,15 @@ public class PlanoDeSaude {
 
     private String nome;
     private int idPaciente;
+    private TipoPlanoDeSaude tipoPlanoDeSaude;
 
     public PlanoDeSaude(String nome) {
         this.nome = nome;
     }
 
-    public PlanoDeSaude(String nome, int idPaciente) {
+    public PlanoDeSaude(String nome, TipoPlanoDeSaude tipoPlanoDeSaude) {
         this(nome);
-        this.idPaciente = idPaciente;
+        this.tipoPlanoDeSaude = tipoPlanoDeSaude;
     }
 
     public String getNome() {
@@ -28,5 +29,13 @@ public class PlanoDeSaude {
 
     public void setIdPaciente(int idPaciente) {
         this.idPaciente = idPaciente;
+    }
+
+    public TipoPlanoDeSaude getTipoPlanoDeSaude() {
+        return tipoPlanoDeSaude;
+    }
+
+    public void setTipoPlanoDeSaude(TipoPlanoDeSaude tipoPlanoDeSaude) {
+        this.tipoPlanoDeSaude = tipoPlanoDeSaude;
     }
 }
