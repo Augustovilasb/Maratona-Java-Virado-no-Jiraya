@@ -15,7 +15,12 @@ public class Plataforma {
 
     @Override
     public String toString() {
-        return "Plataforma Name: " + getName() + ", Lista dos Torneios: " + this.getTorneioList();
+        StringBuilder sb = new StringBuilder();
+        sb.append("Plataforma: ").append(name).append("\n");
+        for (Torneio torneio : torneioList) {
+            sb.append(torneio.toString()).append("\n");
+        }
+        return sb.toString();
     }
 
     public String getName() {

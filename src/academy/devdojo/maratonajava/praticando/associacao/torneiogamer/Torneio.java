@@ -20,11 +20,11 @@ public class Torneio {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("------ TORNEIO " + this.name + "------");
-        sb.append("------ GAME " + this.game + "------");
-        sb.append("------ ORGANIZED BY " + organizador.getName() + "------");
-        sb.append("------ FROM " + organizador.getOrganizadorPaisOrigem() + "------");
-        sb.append("-------- TIMES ---------");
+        sb.append("------ TORNEIO " + this.name + "------\n");
+        sb.append("------ GAME " + this.game + "------\n");
+        sb.append("------ ORGANIZED BY " + organizador.getName() + "------\n");
+        sb.append("------ FROM " + organizador.getOrganizadorPaisOrigem() + "------\n");
+        sb.append("-------- TIMES ---------\n");
         for (Time time : timeList) {
             sb.append(time.toString());
         }
@@ -32,7 +32,7 @@ public class Torneio {
     }
 
     public void qualTorneioJogadorEsta() {
-        //ainda vou fazer
+        //to finish
     }
 
         public void setName (String name){

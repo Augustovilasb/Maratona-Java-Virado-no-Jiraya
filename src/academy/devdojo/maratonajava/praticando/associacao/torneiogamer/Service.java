@@ -47,24 +47,42 @@ public class Service {
         List<Jogador> jogadoresNavi = new ArrayList<>(List.of(j11, j12, j13, j14, j15));
         List<Jogador> jogadoresG2 = new ArrayList<>(List.of(j16, j17, j18, j19, j20));
 
-        Time time1 = new Time("FURIA", tecnico1, jogadoresFuria);
-        Time time2 = new Time("Team Liquid", tecnico2, jogadoresLiquid);
-        Time time3 = new Time("Natus Vincere", tecnico3, jogadoresNavi);
-        Time time4 = new Time("G2 Esports", tecnico4, jogadoresG2);
+        Time timeFuria = new Time("FURIA", tecnicoFuria);
+        Time timeLiquid = new Time("Team Liquid", tecnicoLiquid);
+        Time timeNavi = new Time("Natus Vincere", tecnicoNavi);
+        Time timeG2 = new Time("G2 Esports", tecnicoG2);
 
         // Torneios
-        List<Time> timesTorneio1 = new ArrayList<>(List.of(time1, time2));
-        List<Time> timesTorneio2 = new ArrayList<>(List.of(time3, time4));
+        List<Time> timesTorneio1 = new ArrayList<>(List.of(timeFuria, timeLiquid));
+        List<Time> timesTorneio2 = new ArrayList<>(List.of(timeNavi, timeG2));
 
-        Torneio torneio1 = new Torneio("IEM Katowice", "CS2", org1, timesTorneio1);
-        Torneio torneio2 = new Torneio("ESL Pro League", "Valorant", org2, timesTorneio2);
+        Torneio torneio1 = new Torneio("IEM Katowice", "CS2", org1);
+        Torneio torneio2 = new Torneio("ESL Pro League", "Valorant", org2);
 
         // Plataforma
         List<Torneio> torneios = new ArrayList<>(List.of(torneio1, torneio2));
-        Plataforma plataforma = new Plataforma("ESL Gaming", torneios);
+        Plataforma plataforma = new Plataforma("ESL Gaming");
+
+
+        //Setting tecnicos
+        timeFuria.setTecnico(tecnicoFuria);
+        timeLiquid.setTecnico(tecnicoLiquid);
+        timeNavi.setTecnico(tecnicoNavi);
+        timeG2.setTecnico(tecnicoG2);
+
+        //Setting players
+        timeFuria.setJogadorList(jogadoresFuria);
+        timeLiquid.setJogadorList(jogadoresLiquid);
+        timeNavi.setJogadorList(jogadoresNavi);
+        timeG2.setJogadorList(jogadoresG2);
+
+        //Setting torneios
+        plataforma.setTorneioList(torneios);
+
+        //Setting times
+        torneio1.setTimeList(timesTorneio1);
+        torneio2.setTimeList(timesTorneio2);
 
         System.out.println(plataforma);
-
-
     }
 }
