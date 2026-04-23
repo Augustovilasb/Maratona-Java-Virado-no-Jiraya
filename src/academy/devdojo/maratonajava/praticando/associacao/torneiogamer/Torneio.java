@@ -31,11 +31,22 @@ public class Torneio {
         return sb.toString();
     }
 
-    public void qualTorneioJogadorEsta() {
-        //to finish
+    public void qualTorneioJogadorEsta(Jogador jogador) {
+        if (timeList == null) return;
+        for (Time time : timeList) {
+            for (Jogador jogadorNome : time.getJogadorList()) {
+                if (jogadorNome.equals(jogador)) {
+                    System.out.println("O torneio do jogador " + jogador.getName() + " é: " + getName());
+                }
+            }
+        }
     }
 
-        public void setName (String name){
+        public String getName() {
+            return name;
+        }
+
+    public void setName (String name){
             this.name = name;
         }
 

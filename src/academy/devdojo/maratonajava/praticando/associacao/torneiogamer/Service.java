@@ -84,5 +84,7 @@ public class Service {
         torneio2.setTimeList(timesTorneio2);
 
         System.out.println(plataforma);
+
+        torneio1.qualTorneioJogadorEsta(j2);
     }
 }
