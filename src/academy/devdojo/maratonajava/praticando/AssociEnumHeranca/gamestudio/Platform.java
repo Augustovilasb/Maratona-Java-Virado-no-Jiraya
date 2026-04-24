@@ -8,6 +8,10 @@ public class Platform {
     private List<Studio> studioList;
     private List<Player> playerList;
 
+    public Platform(String name) {
+        this.name = name;
+    }
+
     public Platform(String name, List<Studio> studioList, List<Player> playerList) {
         this.name = name;
         this.studioList = studioList;
@@ -23,8 +27,13 @@ public class Platform {
                 '}';
     }
 
-    public void SearchPlayerByGame() {
-
+    public void searchPlayerByGame(Game game) {
+        if (playerList == null) return;
+        for (Player player : playerList) {
+            if (game.getName().equals(player.getGame().getName())) {
+                System.out.println("The player name is: " + player.getName());
+            }
+        }
     }
 
     public String getName() {

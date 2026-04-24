@@ -13,8 +13,8 @@ public class Player {
     @Override
     public String toString() {
         return "Player{" +
-                "game=" + game +
-                ", name='" + name + '\'' +
+                "game=" + this.getGame() +
+                ", name='" + this.getName() + '\'' +
                 '}';
     }
 
