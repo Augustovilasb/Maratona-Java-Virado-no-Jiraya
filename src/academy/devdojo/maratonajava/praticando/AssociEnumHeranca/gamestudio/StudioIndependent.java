@@ -13,9 +13,9 @@ public class StudioIndependent extends Studio {
 
     @Override
     public String toString() {
-        return "StudioIndependent{" +
-                "staffNumber=" + staffNumber +
-                "} " + super.toString();
+    StringBuilder sb = new StringBuilder();
+    sb.append(this.getName());
+    return sb.toString();
     }
 
     public int getStaffNumber() {

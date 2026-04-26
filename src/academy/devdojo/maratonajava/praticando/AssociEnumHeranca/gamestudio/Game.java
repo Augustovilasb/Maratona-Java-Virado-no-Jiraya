@@ -14,11 +14,9 @@ public class Game {
 
     @Override
     public String toString() {
-        return "Game{" +
-                "name='" + name + '\'' +
-                ", studio=" + studio +
-                ", typeGames=" + typeGames +
-                '}';
+    StringBuilder sb = new StringBuilder();
+        sb.append(this.getName() + " | " + this.getTypeGames().getType() + " | "  + this.getStudio());
+        return sb.toString();
     }
 
     public String getName() {

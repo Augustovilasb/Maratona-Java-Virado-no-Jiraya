@@ -1,11 +1,13 @@
 package academy.devdojo.maratonajava.praticando.AssociEnumHeranca.gamestudio;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class Studio {
 
     private String name;
     private List<Game> gamesList;
+    private List<Studio> studioList;
 
     public Studio(String name, List<Game> gamesList) {
         this.name = name;
@@ -14,10 +16,10 @@ public class Studio {
 
     @Override
     public String toString() {
-        return "Studio{" +
-                "gamesList=" + gamesList +
-                ", name='" + name + '\'' +
-                '}';
+    StringBuilder sb = new StringBuilder();
+    sb.append(" ------ STUDIOS ------ ");
+    sb.append(this.name);
+        return sb.toString();
     }
 
     public String getName() {

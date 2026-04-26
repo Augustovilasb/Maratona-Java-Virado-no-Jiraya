@@ -13,9 +13,9 @@ public class StudioAAA extends Studio {
 
     @Override
     public String toString() {
-        return "StudioAAA{" +
-                "budget=" + budget +
-                "} " + super.toString();
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.getName());
+        return sb.toString();
     }
 
     public double getBudget() {

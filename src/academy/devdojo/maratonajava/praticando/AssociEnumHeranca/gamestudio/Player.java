@@ -12,10 +12,9 @@ public class Player {
 
     @Override
     public String toString() {
-        return "Player{" +
-                "game=" + this.getGame() +
-                ", name='" + this.getName() + '\'' +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.getName());
+        return sb.toString();
     }
 
     public String getName() {

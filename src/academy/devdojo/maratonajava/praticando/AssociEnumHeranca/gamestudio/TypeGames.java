@@ -2,10 +2,10 @@ package academy.devdojo.maratonajava.praticando.AssociEnumHeranca.gamestudio;
 
 public enum TypeGames {
 
-    FPS(1, "First Person Shot"),
-    RPG(2, "Role Playing Game"),
-    RTS(3, "Real Time Strategy"),
-    INDI(4, "Independent Game");
+    FPS(1, "FPS"),
+    RPG(2, "RPG"),
+    RTS(3, "RTS"),
+    INDI(4, "INDI");
 
     private final int value;
     private final String type;
@@ -17,10 +17,9 @@ public enum TypeGames {
 
     @Override
     public String toString() {
-        return "TypeGames{" +
-                "type='" + type + '\'' +
-                ", value=" + value +
-                "} " + super.toString();
+        StringBuilder sb = new StringBuilder();
+        sb.append("Type: " + this.getType() + " | Value: " + this.getValue());
+        return sb.toString();
     }
 
     public static TypeGames findGameByValue(int value) {
