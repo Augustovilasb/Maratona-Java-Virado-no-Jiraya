@@ -11,10 +11,14 @@ public class Service {
         List<Studio> studioList = new ArrayList<>();
         List<Player> playerList = new ArrayList<>();
 
+        List<Game> gameListAAA = new ArrayList<>();
+        List<Game> gameListIndependent = new ArrayList<>();
+
+
         Platform platform = new Platform("GG GameGeneration", studioList, playerList, gameList);
 
-        StudioAAA studioAAA = new StudioAAA("Studio TCH", gameList, 100.000);
-        StudioIndependent studioIndependent = new StudioIndependent("Studio TCH2K", gameList, 15);
+        StudioAAA studioAAA = new StudioAAA("Studio AAA", gameListAAA, 100.000);
+        StudioIndependent studioIndependent = new StudioIndependent("Studio Independent", gameListIndependent, 15);
         studioList.add(studioAAA);
         studioList.add(studioIndependent);
 
@@ -24,6 +28,10 @@ public class Service {
         gameList.add(counterStrike);
         gameList.add(berserker);
         gameList.add(gtaV);
+
+        gameListIndependent.add(counterStrike);
+        gameListIndependent.add(gtaV);
+        gameListAAA.add(berserker);
 
         Player tch = new Player("TCH", counterStrike);
         Player lnzin = new Player("LNZIN", counterStrike);
@@ -35,16 +43,6 @@ public class Service {
         playerList.add(talko);
         playerList.add(nick);
         playerList.add(silvinho);
-
-        tch.setGame(counterStrike);
-        lnzin.setGame(counterStrike);
-        nick.setGame(gtaV);
-        talko.setGame(berserker);
-        silvinho.setGame(gtaV);
-
-        counterStrike.setStudio(studioIndependent);
-        berserker.setStudio(studioAAA);
-        gtaV.setStudio(studioIndependent);
 
         System.out.println(platform);
 

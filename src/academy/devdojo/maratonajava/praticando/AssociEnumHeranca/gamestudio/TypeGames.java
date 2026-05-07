@@ -18,7 +18,7 @@ public enum TypeGames {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Type: " + this.getType() + " | Value: " + this.getValue());
+        sb.append("Type: ").append(getType()).append(" | Value: ").append(this.getValue());
         return sb.toString();
     }
 

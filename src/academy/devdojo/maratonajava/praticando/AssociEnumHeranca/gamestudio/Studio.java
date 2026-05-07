@@ -1,13 +1,11 @@
 package academy.devdojo.maratonajava.praticando.AssociEnumHeranca.gamestudio;
 
-import java.util.Iterator;
 import java.util.List;
 
 public class Studio {
 
     private String name;
     private List<Game> gamesList;
-    private List<Studio> studioList;
 
     public Studio(String name, List<Game> gamesList) {
         this.name = name;

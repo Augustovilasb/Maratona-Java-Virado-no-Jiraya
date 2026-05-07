@@ -13,7 +13,7 @@ public class Player {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(this.getName());
+        sb.append(this.getName()).append(" | ").append(this.getGame());
         return sb.toString();
     }
 

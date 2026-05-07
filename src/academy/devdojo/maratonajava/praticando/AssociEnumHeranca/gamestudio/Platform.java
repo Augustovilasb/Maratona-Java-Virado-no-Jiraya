@@ -21,21 +21,21 @@ public class Platform {
         StringBuilder sb = new StringBuilder();
         sb.append("--------------------------------------------------------\n");
         sb.append("-------------------- GAME PLATFORM ---------------------\n");
-        sb.append(this.name + "\n");
+        sb.append(this.name).append("\n");
         sb.append("--------------------------------------------------------\n");
         sb.append("------------------- STUDIOS PRESENT --------------------\n");
         for (Studio studios : studioList) {
-            sb.append(studios.toString() + "\n");
+            sb.append(studios.toString()).append("\n");
         }
         sb.append("--------------------------------------------------------\n");
         sb.append("------------------- GAMES DEVELOPED --------------------\n");
         for (Game games : gamesList) {
-            sb.append(games.toString() + "\n");
+            sb.append(games.toString()).append("\n");
         }
         sb.append("--------------------------------------------------------\n");
         sb.append("-------------------- PLAYERS ONLINE --------------------\n");
         for (Player players : playerList) {
-            sb.append(players + "\n");
+            sb.append(players).append("\n");
         }
         sb.append("--------------------------------------------------------\n");
         sb.append("--------------------------------------------------------\n");
@@ -45,7 +45,7 @@ public class Platform {
     public void searchPlayerByGame(Game game) {
         if (playerList == null) return;
         for (Player player : playerList) {
-            if (game.getName().equals(player.getGame().getName())) {
+            if (game == player.getGame()) {
                 System.out.println("Playing now: " + player.getName());
             }
         }

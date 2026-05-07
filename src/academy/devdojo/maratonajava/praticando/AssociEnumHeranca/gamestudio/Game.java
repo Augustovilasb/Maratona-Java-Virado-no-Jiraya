@@ -15,7 +15,7 @@ public class Game {
     @Override
     public String toString() {
     StringBuilder sb = new StringBuilder();
-        sb.append(this.getName() + " | " + this.getTypeGames().getType() + " | "  + this.getStudio());
+        sb.append(this.getName()).append(" | ").append(this.getTypeGames().getType()).append(" | ").append(this.getStudio());
         return sb.toString();
     }
 
