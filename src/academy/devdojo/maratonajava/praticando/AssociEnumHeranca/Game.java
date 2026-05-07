@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.praticando.AssociEnumHeranca.gamestudio;
+package academy.devdojo.maratonajava.praticando.AssociEnumHeranca;
 
 public class Game {
 
