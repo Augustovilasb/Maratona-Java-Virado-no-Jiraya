@@ -13,5 +13,7 @@ public class DataLoaderTest01 {
         databaseL.load();
         fileL.load();
 
+        databaseL.remove();
+        fileL.remove();
     }
 }
