@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.LclassesAbstratas.domain;
+package academy.devdojo.maratonajava.javacore.LclassesAbstratas.LojaAbstrata.domain;
 
-public class Gerente extends Funcionario{
+public class Gerente extends Funcionario {
 
     public Gerente(String name, double salary) {
         super(name, salary);
