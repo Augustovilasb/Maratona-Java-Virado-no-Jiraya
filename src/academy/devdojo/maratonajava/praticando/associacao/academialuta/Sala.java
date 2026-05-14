@@ -5,9 +5,9 @@ public class Sala {
     private int numero;
     private int capacidade;
 
-    public Sala(int numero, int capacidade) {
-        this.numero = numero;
+    public Sala(int capacidade, int numero) {
         this.capacidade = capacidade;
+        this.numero = numero;
     }
 
     public int getNumero() {
