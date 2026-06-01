@@ -12,7 +12,7 @@ This repository holds the Java code I write while following the **Maratona Java 
 
 The study is **still in progress**. New topics are added as I move through the course, so the structure below grows over time and does not yet cover the full curriculum.
 
-## What the course covers
+## What I've learned so far
 
 The material is split into two main tracks.
 
