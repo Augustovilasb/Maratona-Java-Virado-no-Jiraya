@@ -1,30 +1,58 @@
-<h1 align="center">☕ Maratona Java Virado no Jiraya</h1>
+<h1 align="center">Maratona Java Virado no Jiraya</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/curso-DevDojo-orange?style=flat-square" alt="DevDojo" />
-  <img src="https://img.shields.io/badge/status-estudo%20completo-success?style=flat-square" alt="estudo completo" />
+  <img src="https://img.shields.io/badge/Java-21-2b2b2b?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/course-DevDojo-555555?style=flat-square" alt="DevDojo" />
+  <img src="https://img.shields.io/badge/status-in%20progress-808080?style=flat-square" alt="in progress" />
 </p>
 
----
+## About
 
-## 📖 Sobre
+This repository holds the Java code I write while following the **Maratona Java Virado no Jiraya**, a free Java course by **DevDojo** (William Suane). The course goes from the language fundamentals up to object oriented programming, and this repo is my hands on notebook for it: one folder per topic, each with the classes and small programs I built to practice the concept.
 
-Estudo **completo** do curso **Maratona Java Virado no Jiraya**, do **DevDojo**.
+The study is **still in progress**. New topics are added as I move through the course, so the structure below grows over time and does not yet cover the full curriculum.
 
-Este repositório reúne todo o código que escrevi acompanhando o curso do começo ao fim — cada tópico, cada exercício e cada conceito de Java praticado ao longo da maratona. É o curso DevDojo completo, do zero ao avançado.
+## What the course covers
 
----
+The material is split into two main tracks.
 
-## ▶️ Como rodar
+**Fundamentals (introducao)**
 
-Projeto Java (IntelliJ IDEA). Abra qualquer classe com `main()` e rode direto pela IDE, ou pela linha de comando:
+Primitive types, operators, conditional statements, loops, arrays and multidimensional arrays. The groundwork before any object oriented work.
 
-```bash
-javac -d out src/<caminho>/<Classe>.java
-java -cp out <pacote>.<Classe>
+**Java Core (javacore)**
+
+The object oriented part of the language, studied step by step:
+
+* Classes and objects
+* Methods and method overloading
+* Constructors and initialization blocks
+* The static modifier
+* Association between classes
+* Inheritance and method overriding
+* The final modifier
+* Enums
+* Abstract classes
+* Interfaces
+* Polymorphism
+
+## Project layout
+
+Standard package structure used by the course:
+
+```
+src/academy/devdojo/maratonajava/
+  introducao/   fundamentals, one class per lesson
+  javacore/     object oriented topics, grouped by subject
 ```
 
----
+Most Java Core topics follow a `dominio` (domain classes) and `test` (runnable examples) split, mirroring how the lessons are organized.
 
-<p align="center"><em>Maratona DevDojo concluída, um conceito de Java de cada vez. 🥋</em></p>
+## How to run
+
+Java 21 project built in IntelliJ IDEA. Open any class that has a `main()` method and run it from the IDE, or use the command line:
+
+```bash
+javac -d out src/<path>/<Class>.java
+java -cp out <package>.<Class>
+```
